@@ -24,9 +24,7 @@ export default function MenuList({ menus }: MenuListProps) {
         ([category, categoryMenus]) =>
           categoryMenus.length > 0 && (
             <div key={category} className="space-y-4">
-              <h2 className="text-xl font-semibold border-b pb-2">
-                {category}
-              </h2>
+              <h2 className="text-xl font-semibold pb-2">{category}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {categoryMenus.map((menu) => (
                   <div
